@@ -18,7 +18,7 @@ function getSelectionText() {
       var selectionText = getSelectionText();
       if (confirm("Отправить сообщение ошибки?") && selectionText != null) {
         $.post("http://localhost:8081/local/php_interface/ErrorSender.php", selectionText, function (msg) {
-            alert(msg);
+
         });
       }
       return;

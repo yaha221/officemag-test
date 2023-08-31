@@ -1,8 +1,10 @@
 <?php
-require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog_before.php");
+if (defined('ADMIN_SECTION')) {
+    return;
+}
+require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 
 use Bitrix\Main\Mail\Event;
-
 
 Event::Send(array(
     "EVENT_NAME" => "ERROR_MESSAGE",
@@ -11,5 +13,3 @@ Event::Send(array(
         "TEXT_ERROR" => $_POST,
     )
 ));
-
-print_r ("Сообщение отправлено");
