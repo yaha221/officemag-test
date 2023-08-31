@@ -32,7 +32,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 	"USE_FILTER" => "Y",
 	"FILTER_NAME" => "",
 	"FILTER_VIEW_MODE" => "VERTICAL",
-	"USE_COMPARE" => "Y",
+	"USE_COMPARE" => "N",
 	"PRICE_CODE" => array(
 		0 => "BASE",
 	),
@@ -143,7 +143,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 	"SHOW_OLD_PRICE" => "Y",
 	"MESS_BTN_BUY" => "Купить",
 	"MESS_BTN_ADD_TO_BASKET" => "В корзину",
-	"MESS_BTN_COMPARE" => "Уже в сравнение",
+	"MESS_BTN_COMPARE" => "Сравнение",
 	"MESS_BTN_DETAIL" => "Подробнее",
 	"MESS_NOT_AVAILABLE" => "Нет в наличии",
 	"DETAIL_USE_VOTE_RATING" => "Y",
@@ -173,7 +173,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 		"sections" => "",
 		"section" => "#SECTION_CODE#/",
 		"element" => "#SECTION_CODE#/#ELEMENT_CODE#/",
-		"compare" => "compare/?DIFFERENT=Y",
+		"compare" => "compare/",
 	)
 	),
 	false
